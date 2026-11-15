@@ -1,33 +1,46 @@
 # Custom Motorcycle Helmet
 
-Open reference guide and JSON catalog for **custom motorcycle helmet** shell styles, artwork zones and surface finishes. Covers all 33 helmet silhouettes used in the 3D AI designer at [Custom Motorcycle Helmet](https://custommotorcyclehelmet.com).
+[English](README.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [Polski](README.pl.md) | [日本語](README.ja.md)
 
-## Files in This Repository
+How motorcycle helmet graphics sit across 33 shell silhouettes, and which paintable zones each style gives you. Covers 12 full face, 7 motocross, 2 adventure, 6 open face and 6 half helmets, with five surface finishes: gloss, matte, chrome, pearl and carbon fiber.
+
+| | | | |
+|:---:|:---:|:---:|:---:|
+| <img src="assets/styles/modern-full-face.webp" width="200" alt="Modern Full Face"><br>Modern Full Face | <img src="assets/styles/race-tail-wing.webp" width="200" alt="Race with Tail Wing"><br>Race with Tail Wing | <img src="assets/styles/street-full-face.webp" width="200" alt="Street Full Face"><br>Street Full Face | <img src="assets/styles/retro-full-face.webp" width="200" alt="Retro Full Face"><br>Retro Full Face |
+| <img src="assets/styles/car-racing-style.webp" width="200" alt="Car Racing Style"><br>Car Racing Style | <img src="assets/styles/adventure-dual-sport.webp" width="200" alt="Adventure Dual Sport"><br>Adventure Dual Sport | <img src="assets/styles/motocross.webp" width="200" alt="Motocross"><br>Motocross | <img src="assets/styles/enduro-shell.webp" width="200" alt="Enduro Shell"><br>Enduro Shell |
+| <img src="assets/styles/retro-open-face.webp" width="200" alt="Retro Open Face"><br>Retro Open Face | <img src="assets/styles/jet-long-shield.webp" width="200" alt="Jet Long Shield"><br>Jet Long Shield | <img src="assets/styles/half-helmet.webp" width="200" alt="Half Helmet"><br>Half Helmet | <img src="assets/styles/german-half.webp" width="200" alt="German Half"><br>German Half |
+
+## Files
 
 | File | Contents |
 |---|---|
-| [index.html](index.html) | Interactive static reference table of 33 custom motorcycle helmet shells, artwork zones and finish presets |
-| [styles.json](styles.json) | Machine-readable JSON catalog of all 33 helmet IDs, rider categories and shell profiles |
+| [STYLES.md](STYLES.md) | One helmet silhouette per row, with its rider category, chin bar, sun peak and paintable zones |
+| [styles.json](styles.json) | The same 33 helmet styles, six zone keys and five finish presets as JSON |
+| [Interactive catalog](https://dirt-bike-graphics.github.io/custom-motorcycle-helmet/) | Filterable GitHub Pages table with direct 3D preview links for all 33 shells |
 
-## Helmet Categories Covered (33 Styles)
+## How to read it
 
-* **Full face (12 styles):** Retro full face, Modern full face, Street full face, Race with tail wing, Sport with tail wing, Vintage full face, Retro with goggles, Rally full face, Slim full face, Car racing style, Race with chin spoiler and Rounded full face.
-* **Motocross and dirt (7 styles):** Retro motocross, Retro scrambler without peak, Enduro shell, Downhill full face, Sharp motocross, Motocross and Motocross with goggles.
-* **Adventure (2 styles):** Adventure dual sport and Street dual sport.
-* **Open face (6 styles):** Retro open face, Jet with long shield, Retro open with peak, Open face, Classic open face and Open face with peak.
-* **Half helmet (6 styles):** Half helmet, Half with peak, Shorty half, Beanie, Vintage half and German half.
+Retro full face row (`t1_peak`): a closed chin bar and detachable sun peak give you all six shell zones (crown, forehead, chin, sides, back and neck). Open face and half shells drop the chin bar, leaving shorter side panels where bold stripes or compact badges read cleaner than tall graphics.
 
-## Using the JSON Data
+Not covered: brand-specific vent cutouts, aftermarket intercom clamp footprints or DOT, ECE and Snell shell sizing tolerances. Check your helmet maker's paint and vinyl guidelines before wrapping or spraying a street shell.
 
-```js
-const res = await fetch("https://dirt-bike-graphics.github.io/custom-motorcycle-helmet/styles.json");
-const { updated, total, styles } = await res.json();
-const motocrossShells = styles.filter((s) => s.category === "Motocross");
-```
+## Contributing
 
-## Official Designer and Guides
+Free to use. Found an error or want to suggest a shell silhouette? Open an issue with the helmet style, rider category and reference photos.
 
-* Official site: [Custom Motorcycle Helmet](https://custommotorcyclehelmet.com)
-* Live 3D editor: [Custom Motorcycle Helmet Designer](https://custommotorcyclehelmet.com/design)
-* By helmet type: [Custom Full Face Motorcycle Helmets](https://custommotorcyclehelmet.com/custom-full-face-motorcycle-helmets) | [Custom Dirt Bike Helmets](https://custommotorcyclehelmet.com/custom-dirt-bike-helmets) | [Custom Half Helmets](https://custommotorcyclehelmet.com/custom-half-helmets)
-* Finishes and decals: [Motorcycle Helmet Wraps](https://custommotorcyclehelmet.com/motorcycle-helmet-wraps) | [Motorcycle Helmet Decals](https://custommotorcyclehelmet.com/motorcycle-helmet-decals) | [Motorcycle Helmet Designs](https://custommotorcyclehelmet.com/motorcycle-helmet-designs)
+## Related
+
+- Data source: [Custom Motorcycle Helmet](https://custommotorcyclehelmet.com), an AI 3D motorcycle helmet designer: describe the look you want or upload a photo, paint it onto any of the 33 helmet styles, add your name and number, and edit it online
+- Live 3D designer and guides: [3D Helmet Designer](https://custommotorcyclehelmet.com/design) | [Full Face Helmets](https://custommotorcyclehelmet.com/custom-full-face-motorcycle-helmets) | [Dirt Bike Helmets](https://custommotorcyclehelmet.com/custom-dirt-bike-helmets) | [Half Helmets](https://custommotorcyclehelmet.com/custom-half-helmets) | [Helmet Wraps](https://custommotorcyclehelmet.com/motorcycle-helmet-wraps) | [Helmet Decals](https://custommotorcyclehelmet.com/motorcycle-helmet-decals)
+
+<img src="assets/helmet-3d-editor-preview.webp" width="640" alt="AI generated motorcycle helmet graphics, edited online in 2D and 3D">
+
+<sub>Describe your idea or start from a photo, then fine-tune zones, decals and finishes in 3D. Custom Motorcycle Helmet, the source of this shell catalog.</sub>
+
+## Elsewhere
+
+**Listings:** [Fazier](https://fazier.com/company/custommotorcyclehelmet) | [VibeCafe](https://vibecafe.ai/products/cmwgt2mt1000008k1u1ds17rg) | [Promote Project](https://www.promoteproject.com/startup/206138/custom-motorcycle-helmet) | [The Hack Stack](https://thehackstack.com/s/custommotorcyclehelmet/) | [Linktree](https://linktr.ee/custommotorcyclehelmet)
+
+**Guides:** [Docs on GitBook](https://custom-motorcycle-helmet.gitbook.io/custom-motorcycle-helmet/custom-motorcycle-helmet) | [Docs on Mintlify](https://custom-motorcycle-helmet.mintlify.app/custom-motorcycle-helmet) | [Designing a helmet in 3D](https://customdirtbikegraphics.substack.com/p/how-to-design-a-custom-motorcycle-helmet-in-3d) | [Curved shell seam geometry](https://dev.to/customdirtbikegraphics/custom-motorcycle-helmet-graphics-in-3d-solving-curved-shell-seam-distortion-and-text-mirroring-238k) | [Step-by-step 3D guide](https://custom-motorcycle-helmet.notion.site/How-to-Design-Your-Own-Custom-Motorcycle-Helmet-in-3D-Step-by-Step-418e389f674480819bfddbe85ed4b928) | [3D helmet design (slides)](https://slides.com/custommotorcyclehelmet/custom-motorcycle-helmet)
+
+**Demos:** [Hugging Face Space](https://huggingface.co/spaces/customdirtbikegraphics/custom-motorcycle-helmet) | [Interactive shell catalog](https://dirt-bike-graphics.github.io/custom-motorcycle-helmet/)

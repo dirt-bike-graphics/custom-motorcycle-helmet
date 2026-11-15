@@ -22,6 +22,9 @@
   figure { margin: 0; background: #1a1c20; border: 1px solid #2a2d33; border-radius: 12px; overflow: hidden; }
   figure img { width: 100%; display: block; }
   figcaption { padding: 10px 12px; font-size: 14px; color: #a3a6ad; }
+  .workflow { margin: 28px 0 10px; border-radius: 12px; border: 1px solid #2a2d33; overflow: hidden; max-width: 720px; background: #1a1c20; }
+  .workflow img { width: 100%; display: block; }
+  .workflow p { padding: 10px 14px; margin: 0; font-size: 13px; color: #a3a6ad; }
   table { width: 100%; border-collapse: collapse; margin: 14px 0 22px; background: #1a1c20; border: 1px solid #2a2d33; border-radius: 10px; overflow: hidden; }
   th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid #2a2d33; font-size: 14px; }
   th { color: #ececec; font-weight: 600; background: #16181c; }
@@ -33,26 +36,58 @@
 <body>
 <div class="wrap">
   <h1>Custom Motorcycle Helmet</h1>
-  <p>Open reference guide for <a href="https://custommotorcyclehelmet.com">custom motorcycle helmet</a> shell profiles, artwork placement zones and surface finishes. Covers all 33 helmet styles supported in the browser 3D AI designer, with raw JSON data at <a href="styles.json">styles.json</a>.</p>
+  <p>Open reference guide for <a href="https://custommotorcyclehelmet.com">custom motorcycle helmet</a> shell profiles, artwork placement zones and surface finishes. Covers all 33 helmet styles supported in the browser 3D AI designer, with Markdown table at <a href="STYLES.md">STYLES.md</a> and raw JSON data at <a href="styles.json">styles.json</a>.</p>
   <a class="cta" href="https://custommotorcyclehelmet.com">Custom Motorcycle Helmet</a>
   <a class="cta ghost" href="https://custommotorcyclehelmet.com/design">Open 3D Helmet Designer</a>
 
   <div class="grid">
     <figure>
-      <img src="https://custommotorcyclehelmet.com/images/gallery/t1_peak-dpt0znbehx.webp" alt="Hot Rod Flames custom motorcycle helmet on a retro full face shell" loading="lazy">
-      <figcaption>Retro full face (<code>t1_peak</code>)</figcaption>
-    </figure>
-    <figure>
-      <img src="https://custommotorcyclehelmet.com/images/gallery/mx_atdesign-yhzwd10hig.webp" alt="Sugar Skull custom motorcycle helmet on a motocross shell" loading="lazy">
-      <figcaption>Motocross (<code>mx_atdesign</code>)</figcaption>
-    </figure>
-    <figure>
-      <img src="https://custommotorcyclehelmet.com/images/gallery/elementza-w43bb5rgp6.webp" alt="Samurai Dragon custom motorcycle helmet on a modern full face shell" loading="lazy">
+      <img src="assets/styles/modern-full-face.webp" alt="Modern full face custom motorcycle helmet" loading="lazy">
       <figcaption>Modern full face (<code>elementza</code>)</figcaption>
     </figure>
     <figure>
-      <img src="https://custommotorcyclehelmet.com/images/gallery/t1_half-65j4eg0tzt.webp" alt="Koi Waves custom motorcycle helmet on a half shell" loading="lazy">
+      <img src="assets/styles/race-tail-wing.webp" alt="Race full face motorcycle helmet with tail wing" loading="lazy">
+      <figcaption>Race with tail wing (<code>race_tail</code>)</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/styles/street-full-face.webp" alt="Street full face custom motorcycle helmet" loading="lazy">
+      <figcaption>Street full face (<code>race_motor</code>)</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/styles/retro-full-face.webp" alt="Retro full face custom motorcycle helmet" loading="lazy">
+      <figcaption>Retro full face (<code>t1_peak</code>)</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/styles/car-racing-style.webp" alt="Car racing style full face helmet" loading="lazy">
+      <figcaption>Car racing style (<code>b_f1</code>)</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/styles/adventure-dual-sport.webp" alt="Adventure dual sport custom motorcycle helmet" loading="lazy">
+      <figcaption>Adventure dual sport (<code>elementza_adv</code>)</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/styles/motocross.webp" alt="Motocross custom dirt bike helmet" loading="lazy">
+      <figcaption>Motocross (<code>mx_atdesign</code>)</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/styles/enduro-shell.webp" alt="Enduro off-road motorcycle helmet shell" loading="lazy">
+      <figcaption>Enduro shell (<code>b_dirt</code>)</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/styles/retro-open-face.webp" alt="Retro open face 3/4 motorcycle helmet" loading="lazy">
+      <figcaption>Retro open face (<code>t1_open</code>)</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/styles/jet-long-shield.webp" alt="Jet motorcycle helmet with long face shield" loading="lazy">
+      <figcaption>Jet with long shield (<code>t1_jet</code>)</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/styles/half-helmet.webp" alt="Cruiser half motorcycle helmet" loading="lazy">
       <figcaption>Half helmet (<code>t1_half</code>)</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/styles/german-half.webp" alt="German style half motorcycle helmet" loading="lazy">
+      <figcaption>German half (<code>half_german</code>)</figcaption>
     </figure>
   </div>
 
@@ -115,10 +150,16 @@
     </tbody>
   </table>
 
+  <h2>AI Generator, 2D Zone Sheet and Live 3D Preview</h2>
+  <div class="workflow">
+    <img src="assets/helmet-3d-editor-preview.webp" alt="The online motorcycle helmet designer with AI generator, 2D zone editor and live 3D preview" loading="lazy">
+    <p>Describe your helmet idea or upload a photo, adjust the six shell zones and decals flat, and spin the live 3D shell in gloss, matte, chrome, pearl or carbon fiber.</p>
+  </div>
+
   <h2>Shell Zones and Finish Guides</h2>
   <p>Explore category guides on the main site: <a href="https://custommotorcyclehelmet.com/custom-full-face-motorcycle-helmets">Custom Full Face Motorcycle Helmets</a>, <a href="https://custommotorcyclehelmet.com/custom-dirt-bike-helmets">Custom Dirt Bike Helmets</a>, <a href="https://custommotorcyclehelmet.com/custom-half-helmets">Custom Half Helmets</a>, <a href="https://custommotorcyclehelmet.com/motorcycle-helmet-wraps">Motorcycle Helmet Wraps</a> and <a href="https://custommotorcyclehelmet.com/motorcycle-helmet-decals">Motorcycle Helmet Decals</a>.</p>
 
-  <footer>Data source: <a href="https://custommotorcyclehelmet.com">Custom Motorcycle Helmet</a>. JSON endpoint: <a href="styles.json">styles.json</a>.</footer>
+  <footer>Data source: <a href="https://custommotorcyclehelmet.com">Custom Motorcycle Helmet</a>. Reference files: <a href="STYLES.md">STYLES.md</a> | <a href="styles.json">styles.json</a> | <a href="https://github.com/dirt-bike-graphics/custom-motorcycle-helmet">GitHub Repository</a>.</footer>
 </div>
 <script>
   document.getElementById('filters').addEventListener('click', function (e) {

@@ -5,7 +5,7 @@
   "updated": "2026-11-15",
   "total": 33,
   "finishes": ["gloss", "matte", "chrome", "pearl", "carbon-fiber"],
-  "zones": ["left-side", "right-side", "crown", "chin-bar", "rear", "visor-strip"],
+  "zones": ["crown", "forehead", "chin", "sides", "back", "neck"],
   "styles": [
     { "id": "t1_peak", "category": "Full face", "model": "Retro full face", "hasPeak": true, "hasChinBar": true },
     { "id": "elementza", "category": "Full face", "model": "Modern full face", "hasPeak": false, "hasChinBar": true },
