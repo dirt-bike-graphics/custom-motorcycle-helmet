@@ -1,0 +1,37 @@
+{
+  "name": "custom-graphics/custom-motorcycle-helmet-styles",
+  "description": "Motorcycle helmet shell silhouettes, paintable zones and surface finishes across 33 helmet styles.",
+  "type": "library",
+  "keywords": [
+    "motorcycle-helmet",
+    "custom-motorcycle-helmet",
+    "helmet-graphics",
+    "helmet-wrap",
+    "helmet-decals",
+    "full-face",
+    "motocross",
+    "open-face"
+  ],
+  "homepage": "https://custommotorcyclehelmet.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Custom Motorcycle Helmet",
+      "homepage": "https://custommotorcyclehelmet.com/design?utm_source=packagist&utm_medium=referral&utm_campaign=packagist",
+      "role": "Creator"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/dirt-bike-graphics/custom-motorcycle-helmet/issues",
+    "source": "https://github.com/dirt-bike-graphics/custom-motorcycle-helmet"
+  },
+  "require": {
+    "php": ">=8.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "CustomGraphics\\HelmetStyles\\": "src/"
+    }
+  }
+}
